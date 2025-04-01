@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação TASS/HSS</title>
+
+    <!-- Reveal.js CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/theme/night.min.css">
+
+    <!-- Plugin de highlight para código -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/plugin/highlight/monokai.min.css">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .site-header {
+            font-family: 'Arial', sans-serif;
+            background-color: #FBE3D6;
+            color: #002060;
+            padding: 10px;
+            text-align: left;
+            text-size-adjust: auto
+        }
+
+        .site-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .presentation-container {
+            height: 700px;
+            margin: 30px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <h1>TAS/HSS</h1>
+        <h2></h2>
+    </header>
+
+    <main class="site-content">
+        <h2>Apresentação Interativa</h2>
+        <p>Esta apresentação demonstra como criar uma estrutura multidimensional com slides horizontais e verticais.</p>
+
+        <div class="presentation-container">
+            <div class="reveal">
+                <div class="slides">
+
+                    <!-- Slide horizontal 1 -->
+                    <section>
+                        <h2>Introdução</h2>
+                        <p>Esta é a primeira seção horizontal</p>
+                        <p>Use setas para direita/esquerda para navegar</p>
+                    </section>
+
+                    <!-- Slide horizontal 2 com slides verticais -->
+                    <section>
+                        <!-- Slide vertical 2.1 -->
+                        <section>
+                            <h2>Capítulo 1</h2>
+                            <p>Primeiro slide vertical</p>
+                            <p>↓ Use seta para baixo para avançar ↓</p>
+                        </section>
+
+                        <!-- Slide vertical 2.2 -->
+                        <section>
+                            <h3>Detalhes do Capítulo 1</h3>
+                            <p>Este é um sub-slide vertical</p>
+                            <p>Você pode criar hierarquias complexas</p>
+                        </section>
+
+                        <!-- Slide vertical 2.3 -->
+                        <section data-background="#4d7e65">
+                            <h2>Slide com fundo diferente</h2>
+                            <p>Personalize cada slide individualmente</p>
+                        </section>
+                    </section>
+
+                    <!-- Slide horizontal 3 -->
+                    <section>
+                        <h2>Tópicos Avançados</h2>
+                        <p>Voltamos aos slides horizontais</p>
+                    </section>
+
+                    <!-- Slide horizontal 4 com mais slides verticais -->
+                    <section>
+                        <!-- Slide vertical 4.1 -->
+                        <section>
+                            <h2>Demonstração de Recursos</h2>
+                            <p>Outro conjunto de slides verticais</p>
+                        </section>
+
+                        <!-- Slide vertical 4.2 -->
+                        <section>
+                            <h3>Layouts Diferentes</h3>
+                            <div style="display: flex; justify-content: space-around; margin-top: 50px;">
+                                <div style="text-align: center;">
+                                    <h4>Coluna 1</h4>
+                                    <p>Conteúdo à esquerda</p>
+                                </div>
+                                <div style="text-align: center;">
+                                    <h4>Coluna 2</h4>
+                                    <p>Conteúdo à direita</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Slide vertical 4.3 -->
+                        <section>
+                            <h2>Código de Exemplo</h2>
+                            <pre><code class="javascript" data-trim>
+function exemploRevealJS() {
+    // Configuração da apresentação
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: true,
+        hash: true,
+        transition: 'slide'
+    });
+    
+    console.log("Apresentação pronta!");
+}
+                            </code></pre>
+                        </section>
+                    </section>
+
+                    <!-- Slide horizontal 5 (final) -->
+                    <section data-background="linear-gradient(to bottom, #283b95, #17b2c3)">
+                        <h2>Conclusão</h2>
+                        <p>Obrigado pela atenção!</p>
+                        <p>reveal.js permite criar apresentações complexas e interativas</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <h3>Sobre esta Demonstração</h3>
+        <p>Esta apresentação mostra como organizar conteúdo em múltiplas dimensões usando reveal.js.</p>
+    </main>
+
+    <footer class="footer">
+        <p>© 2023 Minha Empresa | reveal.js Presentation</p>
+    </footer>
+
+    <!-- Scripts do Reveal.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/plugin/highlight/highlight.min.js"></script>
+
+    <script>
+        // Inicialização do Reveal.js
+        Reveal.initialize({
+            plugins: [RevealHighlight],
+
+            // Configurações de navegação
+            controls: true,          // Mostrar controles de navegação
+            controlsTutorial: true,  // Mostrar instruções de navegação
+            controlsLayout: 'edges', // Posição dos controles
+            progress: true,          // Mostrar barra de progresso
+            slideNumber: 'c/t',      // Mostrar numeração de slides
+            hash: true,              // Atualizar URL com hash do slide
+
+            // Transições
+            transition: 'slide',     // Transição entre slides horizontais
+            transitionSpeed: 'fast', // Velocidade da transição
+            backgroundTransition: 'zoom', // Transição de fundo
+
+            // Navegação multidimensional
+            navigationMode: 'default', // Permite navegação vertical/horizontal
+            showNotes: false,          // Esconder notas do apresentador
+            mouseWheel: false,         // Desativar navegação por mouse wheel
+        });
+    </script>
+</body>
+</html>

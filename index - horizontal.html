@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação TAS/HSS</title>
+
+    <!-- Reveal.js CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reveal.min.css">
+    <!-- Tema do Reveal.js (pode trocar por outro) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/theme/black.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .presentation-container {
+            height: 600px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Plataforma TAS/HSS </h1>
+    </div>
+
+    <div class="container">
+        <h2>Bem-vindo ao meu site</h2>
+        <p>Esta é uma página web que contém uma apresentação criada com reveal.js.</p>
+
+        <div class="presentation-container">
+            <div class="reveal">
+                <div class="slides">
+                    <!-- Slides da apresentação -->
+                    <section>
+                        <h1>Minha Apresentação</h1>
+                        <p>Criada com reveal.js</p>
+                    </section>
+
+                    <section>
+                        <h2>Primeiro Slide</h2>
+                        <p>Este é o conteúdo do primeiro slide.</p>
+                        <p>Reveal.js permite criar apresentações HTML interativas.</p>
+                    </section>
+
+                    <section>
+                        <h2>Segundo Slide</h2>
+                        <p>Lista de recursos:</p>
+                        <ul>
+                            <li>Transições entre slides</li>
+                            <li>Suporte a código</li>
+                            <li>Animações</li>
+                            <li>Temas personalizáveis</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Código de Exemplo</h2>
+                        <pre><code data-trim data-noescape>
+function helloWorld() {
+    console.log("Olá, mundo!");
+    return 42;
+}
+                        </code></pre>
+                    </section>
+
+                    <section data-background="#dddddd">
+                        <h2>Slide com Fundo Diferente</h2>
+                        <p>Você pode personalizar cada slide individualmente.</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <h3>Sobre a Apresentação</h3>
+        <p>Esta apresentação foi incorporada na página web usando reveal.js, uma biblioteca JavaScript para criar apresentações HTML modernas.</p>
+    </div>
+
+    <!-- Scripts do Reveal.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/plugin/highlight/highlight.min.js"></script>
+
+    <script>
+        // Inicialização do Reveal.js
+        Reveal.initialize({
+            plugins: [ RevealHighlight ],
+            // Configurações adicionais
+            transition: 'convex', // Tipo de transição entre slides
+            slideNumber: true,    // Mostrar números dos slides
+            hash: true,          // Atualizar URL com hash do slide
+            controls: true,      // Mostrar controles de navegação
+            progress: true       // Mostrar barra de progresso
+        });
+    </script>
+</body>
+</html>
